@@ -13,19 +13,9 @@ def hello_world():
 @app.route('/signup', methods = ['POST'])
 def signup():
     
-    name = request.form['name']
-    print("The name is '" + name + "'")
 
     email = request.form['email']
     print("The email address is '" + email + "'")
-
-    # spam = 0
-    # spam = request.form['spam']
-    # want_spam = False
-    if 'spam' in request.form:
-    	print("dog")
-    else:
-    	print("cat")
 
     return redirect('/')
 
